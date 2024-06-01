@@ -1,11 +1,15 @@
-/********** Template CSS **********/
+
 :root {
     --primary: #14183E;
     --secondary: #0e1558;
     --light: #F4F7FE;
     --dark: #14183E;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
+ 
 
 /*** Spinner ***/
 #spinner {
@@ -146,7 +150,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-top: -75px;
-    background: url(../img/M\ Background\ 2500x1400\ v3.jpg) center center no-repeat;
+    background: url(../img/M-Background-2500x1400-v3.svg) center center no-repeat;
     background-size: cover;
 }
 
@@ -289,6 +293,23 @@ h6,
     width: 100%;
     background: var(--light);
 }
+.case-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Add border radius for curved corners */
+}
+
+.case-item img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.case-item:hover img {
+    transform: scale(1.1); /* Increase scale on hover for zoom effect */
+}
+
+
 
 
 /*** Feature ***/
@@ -469,7 +490,7 @@ h6,
 
 /*** Footer ***/
 .footer {
-    background: url(../img/footer.png) center center no-repeat;
+    background: url(../img/blind\ image.png) center center no-repeat;
     background-size: contain;
 }
 
@@ -542,3 +563,8 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.fa-phone-alt {
+        transform: rotate(90deg);
+ }
+
